@@ -1,3 +1,16 @@
+需要 mysql(创建eventuate数据库) kafka(startKafka.bat) elasticsearch-5.6.4服务
+
+elasticsearch.yml 注释掉集群
+#cluster.name: CollectorDBCluster
+
+kafka-server-start.bat调小启动内存
+配置 server.properties log.dirs 日志目录
+http://eventuate.io/tram/gettingstarted.html
+启动了这么多就不要再idea中启动SpringBoot应用了，打好包，在
+eventuate-tram-examples-java-spring-todo-list\single-module\build\libs\eventuate-tram-examples-java-spring-todo-list-single-module.jar 直接启动即可
+
+http://localhost:8080/swagger-ui.html
+
 # Todo List example application
 
 
